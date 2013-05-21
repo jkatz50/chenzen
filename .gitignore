@@ -19,7 +19,7 @@ lib
 lib64
 
 #folder
-db_reposistory/
+db_repository/
 
 # Installer logs
 pip-log.txt
