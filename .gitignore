@@ -17,7 +17,9 @@ develop-eggs
 .installed.cfg
 lib
 lib64
-db_reposistory
+
+#folder
+db_reposistory/
 
 # Installer logs
 pip-log.txt
