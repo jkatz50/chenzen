@@ -1,5 +1,5 @@
 from datetime import datetime
-from chenzen.shared.models import db
+from chenzen import db
 
 
 class Entries(db.Model):
