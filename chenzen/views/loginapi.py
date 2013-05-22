@@ -9,12 +9,7 @@ class LoginAPI(MethodView):
 
     def get(self, id):
         if id is None:
+        	users = Users.query.all()
             pass
         else:
             pass
-
-    def post(self):
-        pass
-
-    def delete(self, id):
-        pass
