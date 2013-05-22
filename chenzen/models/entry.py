@@ -2,7 +2,7 @@ from datetime import datetime
 from chenzen import db
 
 
-class Entries(db.Model):
+class Entry(db.Model):
     id = db.Column(db.Integer, primary_key=True, unique=True)
     title = db.Column(db.String(120))
     body = db.Column(db.Text)
@@ -11,8 +11,7 @@ class Entries(db.Model):
     updated = db.Column(db.DateTime)
     published = db.Column(db.DateTime)
     img_url = db.Column(db.String(120))
-    author = db.relationship('Users',
-                             backref=db.backref('entries', lazy='dynamic'))
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
-    def __init__(self):
-        pass
+    def __repr__(self):
+        return '<Entry %r>' % (self.title)
