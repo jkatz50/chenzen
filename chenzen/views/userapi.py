@@ -1,8 +1,9 @@
-from chenzen import chenzen
-from chenzen.models import Users
+from chenzen import chenzen, db
+from chenzen.models import User
 from flask.views import MethodView
 from flask import request
 import json
+import bcrypt
 
 
 class UserAPI(MethodView):

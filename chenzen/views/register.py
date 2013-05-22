@@ -1,5 +1,5 @@
-from chenzen import chenzen, base_url
-from entriesapi import EntriesAPI
+from chenzen import chenzen
+from entryapi import EntryAPI
 from userapi import UserAPI
 
 
