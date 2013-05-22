@@ -6,7 +6,7 @@ class Entries(db.Model):
     id = db.Column(db.Integer, primary_key=True, unique=True)
     title = db.Column(db.String(120))
     body = db.Column(db.Text)
-    tags = db.Column(db.Text)
+    tags = db.Column(db.PickleType)
     created = db.Column(db.DateTime)
     updated = db.Column(db.DateTime)
     published = db.Column(db.DateTime)
