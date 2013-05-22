@@ -13,3 +13,4 @@ def register_api(view, endpoint, url, pk='id'):
 
 register_api(EntryAPI, 'entry_api', '/entries/', pk='id')
 register_api(UserAPI, 'user_api', '/users/', pk='id')
+register_api(LoginAPI, 'login_api', '/login/', pk='id')
