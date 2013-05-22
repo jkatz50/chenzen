@@ -1,5 +1,5 @@
-from chenzen import chenzen
-from chenzen.models import Entries
+from chenzen import chenzen, db
+from chenzen.models import Entry
 from flask.views import MethodView
 from flask import request
 import json

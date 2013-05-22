@@ -1,2 +1,2 @@
-from users import Users
-from entries import Entries
+from user import User
+from entry import Entry
