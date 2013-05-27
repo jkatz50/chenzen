@@ -15,15 +15,14 @@ import json
 
 class LoginAPI(MethodView):
 
-login_manager = 
+#login_manager = LoginManager()
     def get(self, id):
-       form = LoginForm()
-       if form.validate_on_submit():
-       		try:
-       			user = User.objects.get(username=request.form['username'])
-
+    #   form = LoginForm()
+    #   if form.validate_on_submit():
+     #  		try:
+       		#	user = User.objects.get(username=request.form['username'])
+    	print "test"
        			#connect to db and query username and password....
 
-       			login_user(user)
-       			flash('Logged In', 'success')
-
+       		#	login_user(user)
+       		#	flash('Logged In', 'success')

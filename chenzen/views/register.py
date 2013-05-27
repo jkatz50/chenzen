@@ -1,6 +1,7 @@
 from chenzen import chenzen
 from entryapi import EntryAPI
 from userapi import UserAPI
+from loginapi import LoginAPI
 
 
 def register_api(view, endpoint, url, pk='id'):
