@@ -1,6 +1,6 @@
 from chenzen import chenzen, db
 from chenzen.models import User
-#from chenzen.forms import LoginForm
+from chenzen.forms import LoginForm
 from flask.views import MethodView
 from flask import request
 from flask import redirect
@@ -16,11 +16,6 @@ from flask.ext.wtf import Required
 
 
 import json
-
-
-class LoginForm(Form):
-    username = TextField('email', validators=[Required()])
-    password = PasswordField('password', validators=[Required()])
 
 
 class LoginAPI(MethodView):

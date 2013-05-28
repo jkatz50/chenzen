@@ -1,1 +1,1 @@
-import loginform
+from loginform import LoginForm
