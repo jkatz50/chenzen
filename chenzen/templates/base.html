@@ -1,0 +1,14 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}} - ChenZen</title>
+    {% else %}
+    <title>Chenzen</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>ChenZen: <a href="/index">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>

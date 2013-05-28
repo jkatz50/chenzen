@@ -8,12 +8,6 @@ from flask import render_template
 from flask.ext.login import login_required
 from flask.ext.login import logout_user
 from flask.ext.login import current_user
-from flask.ext.wtf import Form
-from flask.ext.wtf import TextField
-from flask.ext.wtf import PasswordField
-from flask.ext.wtf import Required
-
-
 
 import json
 
