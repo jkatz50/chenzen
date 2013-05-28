@@ -1,14 +1,13 @@
-from chenzen import chenzen
-from chenzen.models import Users
-from chenzen.forms import LoginForm
+from chenzen import chenzen, db
+from chenzen.models import User
 from flask.views import MethodView
 from flask import request
 from flask import redirect
 from flask import render_template
-from flask.ext.login import login_use
 from flask.ext.login import login_required
 from flask.ext.login import logout_user
 from flask.ext.login import current_user
+
 
 import json
 
